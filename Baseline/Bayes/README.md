@@ -20,8 +20,10 @@ Optional flags include:
     --gaussian: specifies the use a Gaussian Naive Bayes classifier from the nltk's scikit learn integration
     --help: prints help message and exit (also -h)
     
-A sample output of this pipeline looks like this:Opening CSV file...
+A sample output of this pipeline looks like this:
 ```
+Opening CSV file...
+
 Extracting Features...
 CSV file opened and features extracted
 Data split into sets
