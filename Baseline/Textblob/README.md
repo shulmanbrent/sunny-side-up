@@ -1,1 +1,4 @@
-This folders contains an Textblob implementation for analizing the sentiment of the Stanford140 dataset
+# Textblob
+
+
+This folders contains some functions using the Textblob library for python. f
