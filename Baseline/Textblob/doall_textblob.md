@@ -1,14 +1,14 @@
 
 
     import os, sys
-    sys.path.insert(0, '../Bayes-NLTK')
     sys.path.insert(0, '../Textblob')
-    from import_stanford_twitter import open_stanford_twitter_csv
+    sys.path.insert(0, '../..')
+    from datasets import sentiment140
     from textblob import TextBlob
     from textblob_evaluator import textblob_evaluator
 
 
-    tweet_list = open_stanford_twitter_csv('/Users/bretts/Documents/Preparing_The_Torch/StanfordTweetData/training.1600000.processed.noemoticon.csv')
+    tweet_list = sentiment140.load_data()
 
 
     tweet_list = [(TextBlob(tweet), sent) for tweet, sent in tweet_list]
@@ -25,6 +25,3 @@
     neg precision: 0.608740045831
     neg recall: 0.68636125
 
-
-
-    
